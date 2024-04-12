@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office"><head><link rel="icon" href="../favicon.ico" type="image/x-icon"><meta http-equiv="Content-Language" content="zh-cn" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>LINEGROS - 首頁</title><script language="Javascript">
+ 
+
+
+function fptcsc_TestBrowser()
+{
+ 
+ var ie4,ns,ms; 
+ ms = navigator.appVersion.indexOf("MSIE");
+ 
+ ie4 = (ms>0) && (parseInt(navigator.appVersion.substring(ms+5, ms+6)) >= 4);
+ ns = false;
+ 
+ return (ie4||ns);  
+}
+
+function fptcsc_redirection()
+{
+ 
+ strBrowserLang = new String("");
+ 
+ strBrowserLang = navigator.userLanguage; 
+   
+ 
+ 
+ 
+ switch (strBrowserLang)
+ {
+ 
+ case "zh-sg":  ;  
+ case "zh-cn": {   
+  
+    if (strChsSiteURL.length > 0) window.location.replace(strChsSiteURL); return true;}
+  
+ case "zh-hk": 
+ case "zh-mo": 
+ case "zh-tw":{ 
+ 
+  if (strChtSiteURL.length > 0) window.location.replace(strChtSiteURL); return true;}
+  }
+return false;
+}
+ 
+</script>
+<script LANGUAGE="JavaScript">
+strChsSiteURL = "../index.htm";
+strChtSiteURL = "index.htm";
+strRedirectionPrompt = new String("<p>您的瀏覽器不支援根據您的瀏覽器語言自動重定向。 \ 請選擇您要存取的語言...</p>");
+ 
+if (fptcsc_TestBrowser()&&fptcsc_redirection()) {}
+ else {
+  document.write (strRedirectionPrompt);
+ 
+  
+  document.write("<input value='Simplified Chinese:' type=button onclick=");
+  document.write ("\""+"window.location.href='");
+  document.write (strChsSiteURL);
+  document.write ("'"+"\""+">");
+  
+  
+  document.write("<input value='Traditional Chinese' type=button onclick=");
+  document.write ("\""+"window.location.href='");
+  document.write (strChtSiteURL);
+  document.write ("'"+"\""+">");
+ 
+  }
+  
+</script>
+<style type="text/css">
+.style1 {
+	font-size: xx-large;
+	text-align: center;
+}
+.style2 {
+	text-align: left;
+}
+.style3 {
+	text-align: left;
+	font-size: x-large;
+}
+.style4 {
+	text-align: center;
+}
+.style5 {
+	text-align: left;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	padding-bottom: 1px;
+}
+        /* 使用CSS样式控制按钮布局 */
+        .powered-by {
+            position: absolute;
+            top: 10px;
+            /* 距离顶部的距离 */
+            right: 10px;
+            /* 距离右侧的距离 */
+            color: gray;
+            /* 文字颜色 */
+            font-size: 12px;
+            /* 文字大小 */
+        }
+
+        .made-by {
+            position: absolute;
+            top: 30px;
+            /* 距离顶部的距离 */
+            right: 10px;
+            /* 距离右侧的距离 */
+            color: gray;
+            /* 文字颜色 */
+            font-size: 12px;
+            /* 文字大小 */
+        }
+        @font-face {
+    font-family: OPPOSans;
+    src: url('https://cdn.jsdelivr.net/gh/Cat-AdTeam/Linegros@web/OPPOSans-Regular.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/Cat-AdTeam/Linegros@web/OPPOSans-Regular.woff') format('woff'),
+         url('https://cdn.jsdelivr.net/gh/Cat-AdTeam/Linegros@web/OPPOSans-Regular.ttf') format('ttf');
+    /* 添加其他字体格式，以提高兼容性 */
+    /* font-weight 和 font-style 可以根据需要进行设置 */
+  }
+
+@font-face {
+  font-family: HarmonyOSSansSC;
+    src: url('https://cdn.jsdelivr.net/gh/Cat-AdTeam/Linegros@web/HarmonyOS_Sans_SC_Regular.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/Cat-AdTeam/Linegros@web/HarmonyOS_Sans_SC_Regular.woff') format('woff'),
+         url('https://cdn.jsdelivr.net/gh/Cat-AdTeam/Linegros@web/HarmonyOS_Sans_SC_Regular.ttf') format('ttf');
+  }
+body {
+    font-family: OPPOSans, HarmonyOSSansSC, MiSans, Microsoft YaHei Ui, 微软雅黑; /* 如果无法加载自定义字体，则使用备用字体 */
+}
+</style>
+</head><body><div class="powered-by">Powered by GitHub Pages</div><div class="made-by">Made by upbingun233</div><p class="style1">LINEGROS</p><p class="style2" style="font-size: 40px;">Welcome to Linegros!</p><p class="style2">歡迎來到<strong>首頁</strong>。該頁面展示了一些導航。請根據需要來跳轉哦。<strong><p class="style2">@XiaoYv(XiaoYv)：Linegros 的 主要開發者 <a style="text-decoration:none" target="_blank" href="https://github.com/XiaoYv">[GitHub]</a></p></strong><strong><p class="style2">upbingun233(upbingun)：Linegros 的 JavaFX 版本的開發者 <a style="text-decoration:none" target="_blank" href="https://github.com/upbingun233">[GitHub]</a></strong></p><p class="style3"><em><strong>快速導航</strong></em></p><p class="style2"></p><p class="style2"><a style="text-decoration:none" href="github/index.htm">Linegros GitHub 導航</a></p><p class="style2"><a style="text-decoration:none" href="proinfo/index.htm">專案簡介</a></p><p class="style2"><a style="text-decoration:none" href="new/index.htm">新聞</a></p><p class="style5">&nbsp;</p><p class="style4">Copyright (C) upbingun233</p><p class="style4">&nbsp;</p></body></html>
